@@ -1,0 +1,391 @@
+/*Mise en page des écrans dont la largeur ne dépasse pas 1400px
+@media screen and (max-width:1440px) {*/
+/*css du style global du document*/
+body {
+	font-family: "Raleway", sans-serif;
+	font-size: 16px;
+	line-height: 1.25;
+	max-width: 1400px;
+	padding: 0px 30px 0px 30px;
+	margin: 0 auto;
+}
+:root {
+	--blue: #0065fc;
+    --lightblue: #deeaff;
+    --grey: #d9d9d9;
+    --lightgrey: #f2f2f2;
+    --animation: 0.2s;
+}
+h1 {
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 26px;
+}
+h2 {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+}
+h3 {
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 26px;
+}
+h4 {
+	margin: 0px;
+	line-height: 19px;
+	font-weight: 700;
+	font-size: 16px
+}
+p {
+	margin: 0px;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+ul {
+	list-style-type: none;
+}
+article {
+	display: flex;
+	box-sizing: border-box;
+}
+/*css du header*/
+/*css du header - div barre du haut comprenant le logo et le menu de navigation*/
+.barrehaut {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 63px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.barrehaut img {
+    height: 19px;
+    width: 61.09px;
+	padding-top: 30px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 27%;
+}
+nav a {
+	padding-top: 30px;
+	box-sizing: border-box;
+	width: 50%;
+	text-align: center;
+}
+nav a:hover {
+    border-top: 2px solid #0065fc;
+    color: #0065fc;
+    padding-top: 30px;
+	box-sizing: border-box;
+}
+/*css du header - div filtres permettant la recherche filtrée*/
+form {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 20px 0px;
+}
+#location {
+	width: 50px;
+	height: 50px;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f2f2f2;
+	border: 1px solid #f2f2f2;
+	border-radius: 15px 0px 0px 15px;
+}
+input[type=search] {
+	height: 50px;
+	padding: 0px 16px;
+	border: 1px solid #f2f2f2;
+	border-collapse: collapse;
+	background-color: white;
+	border-radius: 0px;
+	font-family: Raleway;
+	font-size: 18px;
+	font-weight: 700;
+}
+button {
+	border: 1px solid #0065fc;
+	border-radius: 0px 15px 15px 0px;
+	background-color: #0065fc;
+	font-family: Raleway;
+	color: white;
+	padding: 16px 14px;
+	height: 50px;
+	font-size: 18px;
+	font-weight: 700;
+}
+#loupe {
+	display: none;
+}
+.criteres {
+	max-width: 914px;
+	min-height: 50px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 32px 0px 38px 0px;
+	font-size: 17px;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+.criteres h2 {
+	margin-right: 15px;
+}
+.etiquettes {
+	display: flex;
+}
+.etiquettes i {
+	font-size: 18px;
+	padding: 10px;
+	color: #0065fc;
+}
+.etiquettes a {
+	border: 2px solid #d9d9d9;
+	border-radius: 25px;
+	padding: 0px 20px 0px 10px;
+	font-size: 17px;
+	margin-right: 15px;
+}
+.etiquettes a:hover {
+	background-color: #deebff;
+	border-radius: 25px;
+}
+#info {
+	margin-bottom: 8px;
+	display: flex;
+	align-items: center;
+}
+#info i {
+	height: 24px;
+	width: 24px;
+	font-size: 14px;
+	color: #0065fc;
+	border: 1px solid #d9d9d9;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+}
+/*css du main*/
+main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#section1 {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+/*css du main - section hebergements*/
+.hebergements {
+	flex: 2;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-around;
+	background-color: var(--lightgrey);
+	border-radius: 20px;
+	margin: 40px 40px 60px 0px;
+	padding: 20px 25px 0px 25px;
+}
+.cartes {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.hebergements h3 {
+	margin-left: 15px;
+}
+.card {
+	flex: 1;
+	flex-basis: 234px;
+	height: 199px;
+	margin: 0px 12px 24px 12px;
+	background-color: #ffffff;
+	border-radius: 20px;
+	box-shadow:5px 5px 10px var(--grey);
+}
+.card a {
+	width:100%;
+}
+.card img {
+	width: 100%;
+	height: 124px;
+	box-sizing: border-box;
+	object-fit: cover;
+	border: 5px solid #ffffff;
+	border-radius: 20px 20px 0px 0px;
+}
+.container {
+	width: 100%;
+	margin: 0px 0px 0px 16px;
+}
+.container p {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+}
+.container i {
+	font-size: 12px;
+	color: var(--blue);
+}
+.note i {
+	color: var(--lightgrey);
+}
+#plus {
+	display: block;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 21px;
+	margin: 28px 0px 46px 19px;
+}
+/*css du main - aside populaires*/
+.populaires {
+	flex: 1;
+	box-sizing: border-box;
+	border: 1px solid var(--lightgrey);
+	border-radius: 20px;
+	background-color: var(--lightgrey);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 20px 40px 20px 40px;
+	margin: 40px 0px 60px 0px;
+}
+#pop {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+}
+#pop i {
+	color: var(--blue);
+}
+.cartes-pop {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.card-pop {
+	width: 100%;
+	max-width: 389px;
+	flex-shrink: 0;
+	flex: 1;
+	height: 144px;
+	background-color: #ffffff;
+	border-radius: 20px;
+	box-shadow:5px 5px 10px var(--grey);
+	margin: 0px auto 30px auto;
+	flex-direction: row; /*pas sûre de son utilité vu que ça s'applique déjà sur le a*/
+	flex-wrap:nowrap; /*pas sûre de son utilité vu que ça s'applique déjà sur le a*/
+}
+.populaires a {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	height: 144px;
+}
+.card-pop img {
+	width: 137px;
+	height: 144px;
+	object-fit: cover;
+	border: 5px solid #ffffff;
+	border-radius: 20px 0px 0px 20px;
+	box-sizing: border-box;
+}
+.container-pop {
+	height: 144px;
+	width: 208px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 16px 15px 12px 15px;
+	box-sizing: border-box;
+}
+.container-pop p {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+}
+.container-pop i {
+	font-size: 12px;
+	color: var(--blue);
+}
+.note-pop i {
+	color: var(--lightgrey);
+}
+/*css du main - section Activités*/
+.activites {
+	max-height: 600px;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.cartes-act {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+.card-act {
+	width: 25%;
+	flex-basis: 310px;
+	max-height: 444.51px;
+	border-radius: 20px;
+	box-shadow:5px 5px 10px var(--grey);
+	flex-direction: column;
+	margin: 0px 20px;
+}
+.card-act img {
+	height: 389px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 20px 20px 0px 0px;
+}
+.container-act {
+	height: 56px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	padding: 0px 0px 0px 15px;
+}
+/*css du footer*/
+footer {
+	width:100%;
+	height: 225px;
+	background-color: var(--lightgrey);
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	padding: 30px 70px 0px 70px;
+	box-sizing: border-box;
+}
+.footer-list {
+	margin-right: 100px;
+	flex: 1;
+}
+.footer-list ul {
+	padding-left: 0px;
+}
+.footer-list li {
+	padding-bottom: 10px;
+}

@@ -60,10 +60,12 @@
     .hebergements {
         order: 2;
         background-color: #ffffff;
+        margin: 0px;
     }
     /*Section Les plus populaires*/
     .populaires {
         border-radius: 0px;
+        order: 1;
     }
     .cartes-pop {
         flex-direction: column;
@@ -96,19 +98,16 @@
     /*Section activités*/
     .activites {
         max-height: none;
-        margin: 20px 40px 20px 0px;
-        padding: 20px 25px 0px 25px;
+        padding: 20px 40px;
         box-sizing: border-box;
-    }
-    .activites h3 {
-        margin: 22px 0px 22px 15px;
     }
     .cartes-act {
         flex-direction: column;
+        align-items: center;
     }
     .card-act {
-        width: auto;
-        margin: 20px 30px;
+        width: 100%;
+        margin: 0px 0px 20px 0px;
         max-height: 215px;
         max-width: 450px;
     }

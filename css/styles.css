@@ -295,13 +295,9 @@ main {
 	height: 144px;
 	background-color: #ffffff;
 	margin-bottom: 30px;
-	flex-direction: row; /*pas sûre de son utilité vu que ça s'applique déjà sur le a*/
-	flex-wrap:nowrap; /*pas sûre de son utilité vu que ça s'applique déjà sur le a*/
 }
 .populaires a {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
 	height: 144px;
 }
 .card-pop img {

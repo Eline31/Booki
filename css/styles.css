@@ -50,6 +50,8 @@ ul {
 article {
 	display: flex;
 	box-sizing: border-box;
+	border-radius: 20px;
+	box-shadow:5px 5px 10px var(--grey);
 }
 /*css du header*/
 /*css du header - div barre du haut comprenant le logo et le menu de navigation*/
@@ -219,8 +221,7 @@ main {
 	height: 199px;
 	margin: 0px 12px 24px 12px;
 	background-color: #ffffff;
-	border-radius: 20px;
-	box-shadow:5px 5px 10px var(--grey);
+	max-width: 330px;
 }
 .card a {
 	width:100%;
@@ -268,6 +269,7 @@ main {
 	justify-content: flex-start;
 	align-items: center;
 	padding: 20px 40px;
+	max-height: 635px;
 }
 #pop {
 	width: 100%;
@@ -292,16 +294,10 @@ main {
 	flex: 1;
 	height: 144px;
 	background-color: #ffffff;
-	border-radius: 20px;
-	box-shadow:5px 5px 10px var(--grey);
-	margin: 0px auto 30px auto;
-	flex-direction: row; /*pas sûre de son utilité vu que ça s'applique déjà sur le a*/
-	flex-wrap:nowrap; /*pas sûre de son utilité vu que ça s'applique déjà sur le a*/
+	margin-bottom: 30px;
 }
 .populaires a {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
 	height: 144px;
 }
 .card-pop img {
@@ -347,8 +343,6 @@ main {
 	width: 25%;
 	flex-basis: 310px;
 	max-height: 444.51px;
-	border-radius: 20px;
-	box-shadow:5px 5px 10px var(--grey);
 	flex-direction: column;
 	margin: 0px 20px;
 }

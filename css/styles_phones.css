@@ -41,9 +41,6 @@
     button>span:last-child {
         display: block;
     }
-    .criteres>div:last-child {
-        justify-content: space-around;
-    }
     .criteres>div:last-child i {
         font-size: 18px;
     }

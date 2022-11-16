@@ -4,11 +4,11 @@
     nav {
         width: 35%;
     }
-    .etiquettes {
+    .criteres>div:last-child {
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .etiquettes a {
+    .criteres>div:last-child a {
         margin-bottom: 15px;
     }
     #info {

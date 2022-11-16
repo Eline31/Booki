@@ -4,12 +4,12 @@
         padding: 0px;
     }
     /*header*/
-    .barrehaut {
+    header>div:first-child {
         flex-direction: column;
         margin-bottom: 30px;
         align-items: center;
     }	
-    .barrehaut img {
+    header>div:first-child img {
         margin-bottom: 20px;
     }
     nav {
@@ -29,25 +29,25 @@
         color: #0065fc;
         padding-bottom: 20px;
     }
-    .recherche {
+    header>div:last-child {
         padding: 0px 20px;
     }
-    #lieu {
+    input[type=search] {
         max-width: 240px; /*je n'arrive pas à le rendre flexible*/
-    }
-    #texte {
+    } 
+    button>span:first-child {
         display: none;
     }
-    #loupe {
+    button>span:last-child {
         display: block;
     }
-    .etiquettes {
+    .criteres>div:last-child {
         justify-content: space-around;
     }
-    .etiquettes i {
+    .criteres>div:last-child i {
         font-size: 18px;
     }
-    .etiquettes a {
+    .criteres>div:last-child a {
         font-size: 13px;
         line-height: 13px;
         width: 160px;

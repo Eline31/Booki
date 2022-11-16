@@ -200,7 +200,7 @@ main {
 	display: flex;
 	flex-direction: column;
 }
-#section1 {
+main>section:first-child {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -209,7 +209,7 @@ main {
 	margin: 40px 0px 60px 0px;
 }
 /*css du main - section hebergements*/
-.hebergements {
+#hebergements {
 	flex: 2;
 	box-sizing: border-box;
 	display: flex;
@@ -220,14 +220,14 @@ main {
 	margin-right: 30px;
 	padding: 20px 40px;
 }
-.cartes {
+#hebergements>div {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-.hebergements h3 {
+#hebergements h3 {
 	margin-left: 15px;
 }
 .card {
@@ -258,14 +258,14 @@ main {
 	font-size: 14px;
 	line-height: 16px;
 }
-.container i {
+.fa-star {
 	font-size: 12px;
 	color: var(--blue);
 }
 .fa-star:last-child {
 	color: var(--lightgrey);
 }
-#plus {
+#hebergements>span {
 	display: block;
 	font-size: 18px;
 	font-weight: 700;
@@ -273,7 +273,7 @@ main {
 	margin: 25px 0px 30px 20px;
 }
 /*css du main - aside populaires*/
-.populaires {
+#populaires {
 	flex: 1;
 	box-sizing: border-box;
 	border: 1px solid var(--lightgrey);
@@ -286,17 +286,17 @@ main {
 	padding: 20px 40px;
 	max-height: 635px;
 }
-#pop {
+#populaires>div:first-child {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	box-sizing: border-box;
 }
-#pop i {
+#populaires>div:first-child i {
 	color: var(--blue);
 }
-.cartes-pop {
+#populaires>div:last-child {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -311,7 +311,7 @@ main {
 	background-color: #ffffff;
 	margin-bottom: 30px;
 }
-.populaires a {
+#populaires a {
 	display: flex;
 	height: 144px;
 }
@@ -337,17 +337,13 @@ main {
 	font-size: 14px;
 	line-height: 16px;
 }
-.container-pop i {
-	font-size: 12px;
-	color: var(--blue);
-}
 /*css du main - section Activités*/
-.activites {
+#activites {
 	max-height: 600px;
 	width: 100%;
 	margin-bottom: 30px;
 }
-.cartes-act {
+#activites>div {
 	width: 100%;
 	display: flex;
 	flex-direction: row;

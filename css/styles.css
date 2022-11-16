@@ -55,18 +55,31 @@ article {
 }
 /*css du header*/
 /*css du header - div barre du haut comprenant le logo et le menu de navigation*/
-.barrehaut {
+/*.barrehaut {
     display: flex;
     justify-content: space-between;
     margin-bottom: 63px;
     box-sizing: border-box;
     width: 100%;
 }
-.barrehaut img {
+	.barrehaut img {
     height: 19px;
     width: 61.09px;
 	padding-top: 30px;
+}*/
+header>div:first-child {
+	display: flex;
+    justify-content: space-between;
+    margin-bottom: 63px;
+    box-sizing: border-box;
+    width: 100%;
 }
+header>div:first-child img {
+	height: 19px;
+    width: 61.09px;
+	padding-top: 30px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -91,8 +104,9 @@ form {
 	align-items: center;
 	margin: 20px 0px;
 }
-#location {
+form>span {
 	width: 50px;
+	min-width: 50px;
 	height: 50px;
 	font-size: 18px;
 	display: flex;
@@ -104,6 +118,7 @@ form {
 }
 input[type=search] {
 	height: 50px;
+	max-width: 235px;
 	padding: 0px 16px;
 	border: 1px solid #f2f2f2;
 	border-collapse: collapse;
@@ -124,7 +139,7 @@ button {
 	font-size: 18px;
 	font-weight: 700;
 }
-#loupe {
+button>span:last-child {
 	display: none;
 }
 .criteres {
@@ -142,22 +157,22 @@ button {
 .criteres h2 {
 	margin-right: 15px;
 }
-.etiquettes {
+.criteres>div:last-child {
 	display: flex;
 }
-.etiquettes i {
+.criteres>div:last-child i {
 	font-size: 18px;
 	padding: 10px;
 	color: #0065fc;
 }
-.etiquettes a {
+.criteres>div:last-child a {
 	border: 2px solid #d9d9d9;
 	border-radius: 25px;
 	padding: 0px 20px 0px 10px;
 	font-size: 17px;
 	margin-right: 15px;
 }
-.etiquettes a:hover {
+.criteres>div:last-child a:hover {
 	background-color: #deebff;
 	border-radius: 25px;
 }

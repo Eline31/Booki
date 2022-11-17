@@ -14,7 +14,6 @@ body {
   --lightblue: #deeaff;
   --grey: #d9d9d9;
   --lightgrey: #f2f2f2;
-  --animation: 0.2s;
 }
 h1 {
   font-weight: 700;
@@ -55,18 +54,6 @@ article {
 }
 /*css du header*/
 /*css du header - div barre du haut comprenant le logo et le menu de navigation*/
-/*.barrehaut {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 63px;
-    box-sizing: border-box;
-    width: 100%;
-}
-	.barrehaut img {
-    height: 19px;
-    width: 61.09px;
-	padding-top: 30px;
-}*/
 header > div:first-child {
   display: flex;
   justify-content: space-between;

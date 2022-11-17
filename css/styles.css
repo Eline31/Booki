@@ -2,7 +2,7 @@
 @media screen and (max-width:1440px) {*/
 /*css du style global du document*/
 body {
-	font-family: "Raleway", sans-serif;
+	font-family: "Raleway", 'sans-serif';
 	font-size: 16px;
 	line-height: 1.25;
 	max-width: 1400px;
@@ -92,8 +92,8 @@ nav a {
 	text-align: center;
 }
 nav a:hover {
-    border-top: 2px solid #0065fc;
-    color: #0065fc;
+    border-top: 2px solid var(--blue);
+    color: var(--blue);
     padding-top: 30px;
 	box-sizing: border-box;
 }
@@ -112,15 +112,15 @@ form>span {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #f2f2f2;
-	border: 1px solid #f2f2f2;
+	background-color: var(--lightgrey);
+	border: 1px solid var(--lightgrey);
 	border-radius: 15px 0px 0px 15px;
 }
 input[type=search] {
 	height: 50px;
 	max-width: 235px;
 	padding: 0px 16px;
-	border: 1px solid #f2f2f2;
+	border: 1px solid var(--lightgrey);
 	border-collapse: collapse;
 	background-color: white;
 	border-radius: 0px;
@@ -173,7 +173,7 @@ button>span:last-child {
 	margin-right: 15px;
 }
 .criteres>div:last-child a:hover {
-	background-color: #deebff;
+	background-color: var(--lightblue);
 	border-radius: 25px;
 }
 #info {
@@ -185,8 +185,8 @@ button>span:last-child {
 	height: 24px;
 	width: 24px;
 	font-size: 14px;
-	color: #0065fc;
-	border: 1px solid #d9d9d9;
+	color: var(--blue);
+	border: 1px solid var(--grey);
 	border-radius: 50%;
 	display: flex;
 	flex-direction: row;

@@ -42,7 +42,6 @@
 
   input[type="search"] {
     max-width: 240px;
-    /*je n'arrive pas à le rendre flexible*/
   }
 
   button > span:first-child {
@@ -143,7 +142,6 @@
     flex-wrap: nowrap;
     padding-left: 40px;
   }
-
   footer div {
     width: 100%;
   }

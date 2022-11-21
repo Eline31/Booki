@@ -1,0 +1,11 @@
+[user]
+	name = Eline Chambon
+	email = eline.chambon@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff

@@ -125,6 +125,7 @@ button {
   height: 50px;
   font-size: 18px;
   font-weight: 700;
+  cursor: pointer;
 }
 button > span:last-child {
   display: none;

@@ -84,7 +84,7 @@ nav a:hover {
   padding-top: 30px;
   box-sizing: border-box;
 }
-/*css du header - div filtres permettant la recherche filtrée*/
+/*css du header*/
 form {
   display: flex;
   flex-direction: row;
